@@ -1,3 +1,4 @@
+require 'pry'
 require 'nokogiri'
 require 'open-uri'
 
@@ -12,6 +13,7 @@ class Scraper
 #Scraper.new.get_page
   
   def get_courses
+    #binding.pry
     self.get_page.css(".post")
   end 
 
